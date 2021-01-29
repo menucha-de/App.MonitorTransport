@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bindings version="2.1" xmlns="http://java.sun.com/xml/ns/jaxb"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:hi="urn:havis:tools:jaxb:interface"
+	xmlns:hc="urn:havis:tools:jaxb:constructor" xmlns:ci="http://jaxb.dev.java.net/plugin/code-injector"
+	xmlns:ts="urn:havis:tools:jaxb:toString"
+	extensionBindingPrefixes="hi hc ci ts">
+
+	<globalBindings generateElementProperty="false">
+		<javaType name="java.util.Date" xmlType="xs:dateTime"
+			parseMethod="havis.custom.harting.monitortransport.DateTypeAdapter.parseDate"
+			printMethod="havis.custom.harting.monitortransport.DateTypeAdapter.printDate" />
+	</globalBindings>
+
+	<bindings schemaLocation="../../resources/xml/MonitorTransport.xsd">
+		<bindings node="/xs:schema/xs:complexType[@name='Message']">
+			<ts:toString />
+		</bindings>
+	</bindings>
+
+</bindings>
+	

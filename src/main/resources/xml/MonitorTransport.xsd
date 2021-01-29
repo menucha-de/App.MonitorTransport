@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns="urn:havis:custom:harting:monitortransport:xsd:1"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="urn:havis:custom:harting:monitortransport:xsd:1"
+	elementFormDefault="qualified">
+
+	<xs:element name="message" type="Message"/>
+
+	<xs:complexType name="Message">
+		<xs:sequence>
+			<xs:element name="sender" type="xs:string" />
+			<xs:element name="source" type="xs:string" />
+			<xs:element name="name" type="xs:string" />
+			<xs:element name="type" type="xs:string" />
+			<xs:element name="state" type="xs:string" />
+			<xs:element name="timestamp" type="xs:dateTime" />
+			<xs:element name="message" type="xs:string" />
+		</xs:sequence>
+	</xs:complexType>
+
+</xs:schema>

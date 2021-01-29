@@ -1,0 +1,29 @@
+Bundle-Name: Ha-VIS Custom Event Reporter App
+Bundle-SymbolicName: havis.custom.harting.monitortransport
+Bundle-Version: 2.6.0
+Application-Name: Event Reporter
+Implementation-Version: 2.6
+Bundle-ManifestVersion: 2
+Bundle-Vendor: HARTING IT_SD
+Havis-Bundle: 
+ /OSGI-INF/havis.custom.harting.monitortransport.properties
+Bundle-Activator: havis.custom.harting.monitortransport.osgi.Activator
+Import-Package: 
+ com.fasterxml.jackson.annotation,
+ com.fasterxml.jackson.databind,
+ havis.net.rest.shared,
+ havis.net.rest.shared.data,
+ havis.transport,
+ havis.transport.common,
+ havis.util.monitor,
+ javax.ws.rs,
+ javax.ws.rs.core,
+ javax.ws.rs.ext,
+ javax.xml.bind,
+ javax.xml.bind.annotation,
+ javax.xml.namespace,
+ org.osgi;resolution:=optional,
+ org.osgi.framework;resolution:=optional,
+ org.osgi.util.tracker;resolution:=optional
+Export-Package: 
+ havis.custom.harting.monitortransport

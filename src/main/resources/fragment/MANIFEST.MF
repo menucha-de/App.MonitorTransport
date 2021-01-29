@@ -1,0 +1,10 @@
+Bundle-Name: Ha-VIS Custom Event Reporter App Fragment
+Bundle-SymbolicName: havis.custom.harting.monitortransport.fragment
+Bundle-Version: 2.6.0
+Implementation-Version: 2.6
+Bundle-ManifestVersion: 2
+Bundle-Vendor: HARTING IT_SD
+Fragment-Host: havis.util.context
+Import-Package: 
+ havis.custom.harting.monitortransport
+
