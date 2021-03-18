@@ -7,8 +7,8 @@
 
 	<globalBindings generateElementProperty="false">
 		<javaType name="java.util.Date" xmlType="xs:dateTime"
-			parseMethod="havis.custom.harting.monitortransport.DateTypeAdapter.parseDate"
-			printMethod="havis.custom.harting.monitortransport.DateTypeAdapter.printDate" />
+			parseMethod="havis.app.monitortransport.DateTypeAdapter.parseDate"
+			printMethod="havis.app.monitortransport.DateTypeAdapter.printDate" />
 	</globalBindings>
 
 	<bindings schemaLocation="../../resources/xml/MonitorTransport.xsd">

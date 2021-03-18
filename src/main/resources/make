@@ -4,7 +4,7 @@
 
 APP=$(realpath $0)
 
-NAME=havis.custom.harting.monitortransport
+NAME=havis.app.monitortransport
 #DEPS="havis.util.cycle havis.capture-api"
 INFO=/opt/havis-apps/info
 EXIT=0

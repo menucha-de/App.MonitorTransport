@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<project name="havis.custom.harting.monitortransport" default="publish" xmlns:ivy="antlib:org.apache.ivy.ant" xmlns:if="ant:if">
+<project name="havis.app.monitortransport" default="publish" xmlns:ivy="antlib:org.apache.ivy.ant" xmlns:if="ant:if">
 
 	<property file="${basedir}/build.properties" />
 
@@ -50,7 +50,7 @@
 	<target name="deb" depends="jar">
 		<deb dst="${build.dir}/tar">
 			<jar jarfile="${dst.dir}/bundle/40_${basename}.fragment.jar" manifest="${resources.dir}/fragment/MANIFEST.MF" />
-			<mkdir dir="${build.dir}/deb/opt/havis-apps/conf/havis/custom/harting/monitortransport" />
+			<mkdir dir="${build.dir}/deb/opt/havis-apps/conf/havis/app/monitortransport" />
 		</deb>
 	</target>
 
